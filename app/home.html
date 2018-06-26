@@ -1,0 +1,15 @@
+<html>
+<div class="jumbotron text-center" ng-controller="Controller">  
+    <h1>Home</h1>  
+    <p>This page demonstrates  
+        <span class="text-danger">nested</span>views.  
+    </p>  
+    <a ui-sref=".list" class="btn btn-primary">List</a>  
+    <a ui-sref=".paragraph" class="btn btn-danger">Paragraph</a>
+    
+    <a  class="btn btn-default" ng-click="action()">application</a>
+    <p ng-bind="page">数据渲染结果{{$scope.page}}</p>
+    </div>   
+</div>  
+<div ui-view></div> 
+</html> 
